@@ -8,9 +8,42 @@ LeetCode
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
+|415|[Add Strings](https://leetcode.com/problems/add-strings/) | [C++](./algorithms/cpp/addStrings/AddStrings.cpp)|Easy|
+|414|[Third Maximum Number](https://leetcode.com/problems/third-maximum-number/) | [C++](./algorithms/cpp/thirdMaximumNumber/ThirdMaximumNumber.cpp)|Easy|
+|413|[Arithmetic Slices](https://leetcode.com/problems/arithmetic-slices/) | [C++](./algorithms/cpp/arithmeticSlices/ArithmeticSlices.cpp)|Medium|
+|412|[Fizz Buzz](https://leetcode.com/problems/fizz-buzz/) | [C++](./algorithms/cpp/fizzBuzz/FizzBuzz.cpp)|Easy|
+|410|[Split Array Largest Sum](https://leetcode.com/problems/split-array-largest-sum/) | [C++](./algorithms/cpp/splitArrayLargestSum/SplitArrayLargestSum.cpp)|Hard|
+|409|[Longest Palindrome](https://leetcode.com/problems/longest-palindrome/) | [C++](./algorithms/cpp/longestPalindrome/LongestPalindrome.cpp)|Easy|
+|406|[Queue Reconstruction by Height](https://leetcode.com/problems/queue-reconstruction-by-height/) | [C++](./algorithms/cpp/queueReconstructionByHeight/QueueReconstructionByHeight.cpp)|Medium|
+|405|[Convert a Number to Hexadecimal](https://leetcode.com/problems/convert-a-number-to-hexadecimal/) | [C++](./algorithms/cpp/convertANumberToHexadecimal/ConvertANumberToHexadecimal.cpp)|Easy|
+|404|[Sum of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves/) | [C++](./algorithms/cpp/sumOfLeftLeaves/SumOfLeftLeaves.cpp)|Easy|
+|403|[Frog Jump](https://leetcode.com/problems/frog-jump/) | [C++](./algorithms/cpp/frogJump/FrogJump.cpp)|Hard|
+|402|[Remove K Digits](https://leetcode.com/problems/remove-k-digits/) | [C++](./algorithms/cpp/removeKDigits/RemoveKDigits.cpp)|Medium|
+|401|[Binary Watch](https://leetcode.com/problems/binary-watch/) | [C++](./algorithms/cpp/binaryWatch/BinaryWatch.cpp)|Easy|
+|400|[Nth Digit](https://leetcode.com/problems/nth-digit/) | [C++](./algorithms/cpp/nthDigit/NthDigit.cpp)|Easy|
+|399|[Evaluate Division](https://leetcode.com/problems/evaluate-division/) | [C++](./algorithms/cpp/evaluateDivision/EvaluateDivision.cpp)|Medium|
+|398|[Random Pick Index](https://leetcode.com/problems/random-pick-index/) | [C++](./algorithms/cpp/randomPickIndex/RandomPickIndex.cpp)|Medium|
+|397|[Integer Replacement](https://leetcode.com/problems/integer-replacement/) | [C++](./algorithms/cpp/integerReplacement/IntegerReplacement.cpp)|Medium|
+|396|[Rotate Function](https://leetcode.com/problems/rotate-function/) | [C++](./algorithms/cpp/rotateFunction/RotateFunction.cpp)|Easy|
+|395|[Longest Substring with At Least K Repeating Characters](https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters/) | [C++](./algorithms/cpp/longestSubstringWithAtLeastKRepeatingCharacters/LongestSubstringWithAtLeastKRepeatingCharacters.cpp)|Medium|
+|394|[Decode String](https://leetcode.com/problems/decode-string/) | [C++](./algorithms/cpp/decodeString/DecodeString.cpp)|Medium|
+|393|[UTF-8 Validation](https://leetcode.com/problems/utf-8-validation/) | [C++](./algorithms/cpp/UTF8Validation/UTF8Validation.cpp)|Medium|
+|392|[Is Subsequence](https://leetcode.com/problems/is-subsequence/) | [C++](./algorithms/cpp/isSubsequence/IsSubsequence.cpp)|Medium|
+|391|[Perfect Rectangle](https://leetcode.com/problems/perfect-rectangle/) | [C++](./algorithms/cpp/perfectRectangle/PerfectRectangle.cpp)|Hard|
+|390|[Elimination Game](https://leetcode.com/problems/elimination-game/) | [C++](./algorithms/cpp/eliminationGame/EliminationGame.cpp)|Medium|
+|389|[Find the Difference](https://leetcode.com/problems/find-the-difference/) | [C++](./algorithms/cpp/findTheDifference/FindTheDifference.cpp)|Easy|
+|388|[Longest Absolute File Path](https://leetcode.com/problems/longest-absolute-file-path/) | [C++](./algorithms/cpp/longestAbsoluteFilePath/LongestAbsoluteFilePath.cpp)|Medium|
+|387|[First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/) | [C++](./algorithms/cpp/firstUniqueCharacterInAString/FirstUniqueCharacterInAString.cpp)|Easy|
+|386|[Lexicographical Numbers](https://leetcode.com/problems/lexicographical-numbers/) | [C++](./algorithms/cpp/lexicographicalNumbers/LexicographicalNumbers.cpp)|Medium|
+|385|[Mini Parser](https://leetcode.com/problems/mini-parser/) | [C++](./algorithms/cpp/miniParser/MiniParser.cpp)|Medium|
+|384|[Shuffle an Array](https://leetcode.com/problems/shuffle-an-array/) | [C++](./algorithms/cpp/shuffleAnArray/ShuffleAnArray.cpp)|Medium|
+|383|[Ransom Note](https://leetcode.com/problems/ransom-note/) | [C++](./algorithms/cpp/ransomNote/RansomNote.cpp)|Easy|
+|382|[Linked List Random Node](https://leetcode.com/problems/linked-list-random-node/) | [C++](./algorithms/cpp/linkedListRandomNode/LinkedListRandomNode.cpp)|Medium|
+|381|[Insert Delete GetRandom O(1) - Duplicates allowed](https://leetcode.com/problems/insert-delete-getrandom-o1-duplicates-allowed/) | [C++](./algorithms/cpp/insertDeleteGetRandom/InsertDeleteGetrandomO1DuplicatesAllowed.cpp)|Hard|
+|380|[Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1/) | [C++](./algorithms/cpp/insertDeleteGetRandom/InsertDeleteGetrandomO1.cpp)|Hard|
 |377|[Combination Sum IV](https://leetcode.com/problems/combination-sum-iv/) | [C++](./algorithms/cpp/combinationSumIV/combinationSumIV.cpp)|Medium|
 |376|[Wiggle Subsequence](https://leetcode.com/problems/wiggle-subsequence/) | [C++](./algorithms/cpp/wiggleSubsequence/wiggleSubsequence.cpp)|Medium|
-|350|[Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/) | [C++](./algorithms/cpp/intersectionOfTwoArraysII/intersectionOfTwoArraysII.cpp)|Easy|
+|350|[Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/) | [C++](./algorithms/cpp/intersectionOfTwoArrays/intersectionOfTwoArraysII.cpp)|Easy|
 |349|[Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/) | [C++](./algorithms/cpp/intersectionOfTwoArrays/intersectionOfTwoArrays.cpp)|Easy|
 |347|[Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) | [C++](./algorithms/cpp/topKFrequentElements/topKFrequentElements.cpp)|Medium|
 |345|[Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string/) | [C++](./algorithms/cpp/reverseVowelsOfAString/reverseVowelsOfAString.cpp)|Easy|
