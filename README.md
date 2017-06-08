@@ -8,6 +8,7 @@ LeetCode
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
+|477|[Total Hamming Distance](https://leetcode.com/problems/total-hamming-distance/) | [C++](./algorithms/cpp/totalHammingDistance/totalHammingDistance.cpp)|Medium|
 |415|[Add Strings](https://leetcode.com/problems/add-strings/) | [C++](./algorithms/cpp/addStrings/AddStrings.cpp)|Easy|
 |414|[Third Maximum Number](https://leetcode.com/problems/third-maximum-number/) | [C++](./algorithms/cpp/thirdMaximumNumber/ThirdMaximumNumber.cpp)|Easy|
 |413|[Arithmetic Slices](https://leetcode.com/problems/arithmetic-slices/) | [C++](./algorithms/cpp/arithmeticSlices/ArithmeticSlices.cpp)|Medium|
@@ -53,16 +54,23 @@ LeetCode
 |341|[Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator/) | [C++](./algorithms/cpp/flattenNestedListIterator/FlattenNestedListIterator.cpp)|Medium|
 |338|[Counting Bits](https://leetcode.com/problems/counting-bits/) | [C++](./algorithms/cpp/countingBits/CountingBits.cpp)|Medium|
 |337|[House Robber III](https://leetcode.com/problems/house-robber-iii/) | [C++](./algorithms/cpp/houseRobber/houseRobberIII.cpp)|Medium|
+|336|[Palindrome Pairs](https://leetcode.com/problems/palindrome-pairs/) | [C++](./algorithms/cpp/palindromePairs/PalindromePairs.cpp)|Hard|
 |334|[Increasing Triplet Subsequence](https://leetcode.com/problems/increasing-triplet-subsequence/) | [C++](./algorithms/cpp/increasingTripletSubsequence/increasingTripletSubsequence.cpp)|Medium|
+|332|[Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary/) | [C++](./algorithms/cpp/reconstructItinerary/ReconstructItinerary.cpp)|Medium|
+|331|[Verify Preorder Serialization of a Binary Tree](https://leetcode.com/problems/verify-preorder-serialization-of-a-binary-tree/) | [C++](./algorithms/cpp/verifyPreorderSerializationOfABinaryTree/VerifyPreorderSerializationOfABinaryTree.cpp)|Medium|
 |330|[Patching Array](https://leetcode.com/problems/patching-array/) | [C++](./algorithms/cpp/patchingArray/PatchingArray.cpp)|Medium|
 |329|[Longest Increasing Path in a Matrix](https://leetcode.com/problems/longest-increasing-path-in-a-matrix/) | [C++](./algorithms/cpp/longestIncreasingPathInAMatrix/LongestIncreasingPathInAMatrix.cpp)|Medium|
 |328|[Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list/) | [C++](./algorithms/cpp/oddEvenLinkedList/OddEvenLinkedList.cpp)|Easy|
 |327|[Count of Range Sum](https://leetcode.com/problems/count-of-range-sum/) | [C++](./algorithms/cpp/countOfRangeSum/CountOfRangeSum.cpp)|Hard|
 |326|[Power of Three](https://leetcode.com/problems/power-of-three/) | [C++](./algorithms/cpp/powerOfThree/PowerOfThree.cpp)|Easy|
+|324|[Wiggle Sort II](https://leetcode.com/problems/wiggle-sort-ii/) | [C++](./algorithms/cpp/wiggleSort/WiggleSort.II.cpp)|Medium|
 |322|[Coin Change](https://leetcode.com/problems/coin-change/) | [C++](./algorithms/cpp/coinChange/coinChange.cpp)|Medium|
 |321|[Create Maximum Number](https://leetcode.com/problems/create-maximum-number/) | [C++](./algorithms/cpp/createMaximumNumber/CreateMaximumNumber.cpp)|Hard|
 |319|[Bulb Switcher](https://leetcode.com/problems/bulb-switcher/) | [C++](./algorithms/cpp/bulbSwitcher/bulbSwitcher.cpp)|Medium|
+|318|[Maximum Product of Word Lengths](https://leetcode.com/problems/maximum-product-of-word-lengths/) | [C++](./algorithms/cpp/maximumProductOfWordLengths/MaximumProductOfWordLengths.cpp)|Medium|
+|316|[Remove Duplicate Letters](https://leetcode.com/problems/remove-duplicate-letters/) | [C++](./algorithms/cpp/removeDuplicateLetters/RemoveDuplicateLetters.cpp)|Hard|
 |315|[Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self/) | [C++](./algorithms/cpp/countOfSmallerNumbersAfterSelf/countOfSmallerNumbersAfterSelf.cpp)|Hard|
+|313|[Super Ugly Number](https://leetcode.com/problems/super-ugly-number/) | [C++](./algorithms/cpp/superUglyNumber/SuperUglyNumber.cpp)|Medium|
 |312|[Burst Balloons](https://leetcode.com/problems/burst-balloons/) | [C++](./algorithms/cpp/burstBalloons/BurstBalloons.cpp)|Hard|
 |310|[Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees/) | [C++](./algorithms/cpp/minimumHeightTrees/MinimumHeightTrees.cpp)|Medium|
 |307|[Range Sum Query - Mutable](https://leetcode.com/problems/range-sum-query-mutable/) | [C++](./algorithms/cpp/rangeSumQuery-Immutable/rangeSumQuery-Mutable/RangeSumQueryMutable.cpp)|Medium|
