@@ -34,8 +34,7 @@ function query_problem()
     -H 'authority: leetcode.com' \
      -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36' \
     -H "referer: ${1}" \
-    --data-binary '{"operationName":"getQuestionDetail","variables":{"titleSlug":"'${2}'"},"query":"query getQuestionDetail($titleSlug: String!) {\n  isCurrentUserAuthenticated\n  question(titleSlug: $titleSlug) {\n    questionId\n    questionFrontendId\n    questionTitle\n    translatedTitle\n    questionTitleSlug\n    content\n    translatedContent\n    difficulty\n    stats\n    allowDiscuss\n    contributors\n    similarQuestions\n    mysqlSchemas\n    randomQuestionUrl\n    sessionId\n    categoryTitle\n    submitUrl\n    interpretUrl\n    codeDefinition\n    sampleTestCase\n    enableTestMode\n    metaData\n    enableRunCode\n    enableSubmit\n    judgerAvailable\n    infoVerified\n    envInfo\n    urlManager\n    article\n    questionDetailUrl\n    libraryUrl\n    companyTags {\n      name\n      slug\n      translatedName\n      __typename\n    }\n    topicTags {\n      name\n      slug\n      translatedName\n      __typename\n    }\n    __typename\n  }\n  interviewed {\n    interviewedUrl\n    companies {\n      id\n      name\n      slug\n      __typename\n    }\n    timeOptions {\n      id\n      name\n      __typename\n    }\n    stageOptions {\n      id\n      name\n      __typename\n    }\n    __typename\n  }\n  subscribeUrl\n  isPremium\n  loginUrl\n}\n"}' --compressed > ${TMP_JSON_FILE}
-
+    --data-binary '{"operationName":"questionData","variables":{"titleSlug":"'${2}'"},"query":"query questionData($titleSlug: String!) {\n  question(titleSlug: $titleSlug) {\n    questionId\n    questionFrontendId\n    boundTopicId\n    title\n    titleSlug\n    content\n    translatedTitle\n    translatedContent\n    isPaidOnly\n    difficulty\n    likes\n    dislikes\n    isLiked\n    similarQuestions\n    contributors {\n      username\n      profileUrl\n      avatarUrl\n      __typename\n    }\n    langToValidPlayground\n    topicTags {\n      name\n      slug\n      translatedName\n      __typename\n    }\n    companyTagStats\n    codeSnippets {\n      lang\n      langSlug\n      code\n      __typename\n    }\n    stats\n    hints\n    solution {\n      id\n      canSeeDetail\n      __typename\n    }\n    status\n    sampleTestCase\n    metaData\n    judgerAvailable\n    judgeType\n    mysqlSchemas\n    enableRunCode\n    enableTestMode\n    envInfo\n    __typename\n  }\n}\n"}' --compressed > ${TMP_JSON_FILE}
 
     # xidel change the -q option to -s after 0.9.4 version, so we have to check that
     # if xidel has -q option, then it will return error. 
@@ -59,7 +58,7 @@ function query_problem()
 
     QUESTION_DIFFICULTY=$(xidel ${OPT} ${TMP_JSON_FILE} -e '$json("data").question.difficulty')
 
-    QUESTION_TITLE=$(xidel ${OPT} ${TMP_JSON_FILE} -e '$json("data").question.questionTitle')
+    QUESTION_TITLE=$(xidel ${OPT} ${TMP_JSON_FILE} -e '$json("data").question.title')
 
     QUESTION_ID=$(xidel ${OPT} ${TMP_JSON_FILE} -e '$json("data").question.questionId')
 
@@ -82,6 +81,16 @@ function detect_os()
     echo ${platform}
 }
 
+function install_brew() 
+{
+    TRUE_CMD=`which true`
+    brew=`type -P brew || ${TRUE_CMD}`
+    if [ -z "${brew}" ]; then
+        echo "brew not found !"
+        /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+    fi
+}
+
 function install_xidel()
 {
     echo "Install xidel ..."
@@ -98,7 +107,7 @@ function install_xidel()
     fi
 
     #install the xidel on Linux platform
-    xidel_ver=0.9.6
+    xidel_ver=0.9.8
     if [[ "$platform" == "linux" ]]; then
         hardware=`uname -m`
         xidel_tar=xidel-${xidel_ver}.linux64.tar.gz
@@ -112,7 +121,7 @@ function install_xidel()
         esac
         if [ ! -f ${xidel_tar} ]; then
             echo "Downloading xidel......"
-            curl -s -L https://jaist.dl.sourceforge.net/project/videlibri/Xidel/Xidel%20${xidel_ver}/${xidel_tar} -o ${xidel_tar}
+            curl -# -L https://github.com/benibela/xidel/releases/download/Xidel_${xidel_ver}/${xidel_tar} -o ${xidel_tar}
         fi
         tar -zxvf ${xidel_tar}
         sudo ./install.sh
@@ -121,13 +130,9 @@ function install_xidel()
     #install the xidel on MacOS platform
     #refer to: https://www.evernote.com/shard/s69/sh/ff1e78f3-a369-4855-b18f-6184ce789c45/f3511927d0fb356ce883835f2eb712e0
     if [[ "$platform" == "macos" ]]; then
-        echo "Downloading xidel......"
-        xidel_zip=xidel.zip
-        if [ ! -f ${xidel_zip} ]; then
-            curl -L https://www.evernote.com/shard/s69/sh/ff1e78f3-a369-4855-b18f-6184ce789c45/f3511927d0fb356ce883835f2eb712e0/res/de33e89a-cdc6-42b5-a476-32e2df1cf4bc/${xidel_zip} -o ${xidel_zip}
-        fi
-        unzip ${xidel_zip}
-        mv xidel /usr/local/bin/
+        install_brew
+        echo "brew install xidel..."
+        brew install xidel
     fi
 
     cd ..
